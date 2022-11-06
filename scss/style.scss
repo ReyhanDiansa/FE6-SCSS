@@ -352,41 +352,7 @@ nav {
   }
 }
 
-/* Footer Section */
-footer {
-  margin-top: 106px;
-  margin-bottom: 24px;
-  color: $white;
-  font-family: $os;
-  height: 102px;
 
-  .footer-connect {
-    @include flex-center;
-
-    h4 {
-      font-size: $fs+14;
-      font-weight: 700;
-      margin-right: 24px;
-    }
-
-    a i {
-      font-size: $fs+14;
-      margin-right: 16px;
-      color: $white;
-    }
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-
-    .content-privacy {
-      display: flex;
-      column-gap: 24px;
-    }
-  }
-}
 
 /* =========== DETAIL PERSON =========== */
 
