@@ -341,7 +341,7 @@ footer .footer-content {
 footer .footer-content .content-privacy {
   display: flex;
   -moz-column-gap: 24px;
-       column-gap: 24px;
+      column-gap: 24px;
 }
 
 /* =========== DETAIL PERSON =========== */
