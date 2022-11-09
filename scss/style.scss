@@ -357,7 +357,7 @@ nav {
 /* =========== DETAIL PERSON =========== */
 
 .carousel {
-  height: 100vh;
+  height: 120vh;
   background-image: $b-image;
   background-size: cover;
   background-repeat: no-repeat;
@@ -481,6 +481,8 @@ nav {
   color: white;
   display: flex;
   justify-content: space-between;
+  height: 80vh;
+  margin-top: 2rem;
   .person {
     width: 45%;
     .judul {
@@ -725,9 +727,20 @@ footer {
     }
   }
 
-  .container .profile .maps iframe{
-    width:80% ;
-    height:auto;
+  .profile {
+    flex-direction: column;
+    .person {
+      width: 100%;
+      .content-wrapper {
+        justify-content: space-between;
+      }
+    }
+    .maps {
+      width: 100%;
+      iframe {
+        height: 40vh;
+      }
+    }
   }
   
 
@@ -853,6 +866,50 @@ footer {
       }
     }
   }
+  // Carousel
+  .carousel {
+    .carousel-wrapper {
+      flex-direction: column;
+      align-items: center;
+      .carousel-content {
+        width: 70%;
+      }
+      .carousel-btn {
+        width: 100%;
+        flex-direction: row-reverse;
+        column-gap: 2rem;
+        padding: 1rem auto;
+        button {
+          font-size: 16px;
+        }
+      }
+
+      .carousel-title {
+        margin-top: 1rem;
+        .title-content {
+          h1 {
+            font-size: $fs * 4;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .profile {
+    .person {
+      .content-wrapper {
+        flex-direction: column;
+        width: 100%;
+        .detail {
+          width: 100%;
+        }
+      }
+    }
+  }
+
 }
 
   
