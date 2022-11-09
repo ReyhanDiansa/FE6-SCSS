@@ -313,7 +313,7 @@ nav ul li a:hover::after {
 
 /* =========== DETAIL PERSON =========== */
 .carousel {
-  height: 100vh;
+  height: 120vh;
   background-image: url(../assets/images/background-top-text.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -412,52 +412,65 @@ nav ul li a:hover::after {
 }
 
 .profile {
+  color: white;
+  display: flex;
   justify-content: space-between;
-  color: #fff;
+  height: 80vh;
+  margin-top: 2rem;
 }
-.profile .judul {
-  margin-bottom: 40px;
+.profile .person {
+  width: 45%;
+}
+.profile .person .judul h1 {
+  font-size: 40px;
   font-family: "Oxanium";
   font-weight: 600;
-  font-size: 40px;
 }
-.profile .judul p {
-  font-family: "Open Sans";
-  font-weight: 500;
+.profile .person .judul p {
   font-size: 20px;
-}
-
-.profile {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-.profile .detail {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 24px;
-  gap: 17px;
-  width: 80%;
-}
-.profile .detail .icon i {
-  width: 20px;
-  scale: 2;
-}
-.profile .detail .detail-data h4 {
   font-family: "Open Sans";
-  font-size: 14px;
   font-weight: 500;
 }
-.profile .detail .detail-data p {
+.profile .person .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
   font-family: "Open Sans";
-  font-size: 26px;
+  margin-top: 2rem;
+}
+.profile .person .content-wrapper .detail {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  align-items: center;
+}
+.profile .person .content-wrapper .detail .icon {
+  font-size: 2rem;
+  width: 2rem;
+}
+.profile .person .content-wrapper .detail .detail-data h4 {
+  font-size: 0.8rem;
+}
+.profile .person .content-wrapper .detail .detail-data p {
+  font-size: 1.5rem;
+}
+.profile .maps {
+  width: 55%;
+}
+.profile .maps .judul h1 {
+  font-size: 40px;
+  font-family: "Oxanium";
+  font-weight: 600;
+}
+.profile .maps .judul p {
+  font-size: 20px;
+  font-family: "Open Sans";
   font-weight: 500;
 }
 .profile .maps iframe {
-  width: 769px;
-  height: 441px;
+  margin-top: 2rem;
+  width: 100%;
+  height: 70%;
 }
 
 /* Footer */
@@ -581,6 +594,13 @@ footer .footer-content .content-privacy {
     width: 100%;
     margin-top: 32px;
   }
+  footer .footer-connect h4, footer .footer-connect a i {
+    font-size: 18px;
+  }
+  footer .footer-content .content-privacy,
+footer .footer-content .content-copyright {
+    font-size: 14px;
+  }
   .carousel .carousel-wrapper {
     flex-direction: row;
     justify-content: center;
@@ -604,15 +624,22 @@ footer .footer-content .content-privacy {
     width: 50%;
     height: auto;
   }
+  .profile {
+    flex-direction: column;
+  }
+  .profile .person {
+    width: 100%;
+  }
+  .profile .person .content-wrapper {
+    justify-content: space-between;
+  }
+  .profile .maps {
+    width: 100%;
+  }
+  .profile .maps iframe {
+    height: 40vh;
+  }
 }
-footer .footer-connect h4, footer .footer-connect a i {
-  font-size: 18px;
-}
-footer .footer-content .content-privacy,
-footer .footer-content .content-copyright {
-  font-size: 14px;
-}
-
 @media only screen and (max-width: 576px) {
   .container {
     width: 90%;
@@ -702,5 +729,38 @@ footer .footer-content .content-copyright {
   }
   .aboutus-wrapper .aboutus-content .aboutus-content-main .aboutus-person .person-content p {
     font-size: 14px;
+  }
+  .carousel .carousel-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel .carousel-wrapper .carousel-content {
+    width: 70%;
+  }
+  .carousel .carousel-wrapper .carousel-btn {
+    width: 100%;
+    flex-direction: row-reverse;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    padding: 1rem auto;
+  }
+  .carousel .carousel-wrapper .carousel-btn button {
+    font-size: 16px;
+  }
+  .carousel .carousel-wrapper .carousel-title {
+    margin-top: 1rem;
+  }
+  .carousel .carousel-wrapper .carousel-title .title-content h1 {
+    font-size: 40px;
+  }
+  .carousel .carousel-wrapper .carousel-title .title-content p {
+    font-size: 1rem;
+  }
+  .profile .person .content-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .profile .person .content-wrapper .detail {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
